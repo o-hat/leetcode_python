@@ -1,0 +1,14 @@
+reated by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+
+.idea
+
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+
