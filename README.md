@@ -18,3 +18,17 @@
 
 #### 2019-04-05
 从原来的项目单独抽离出来，打算从分类的难度一个一个过
+
+#### 栈 stack
+1. o.isdigit()只能判断整数。判断是否是正负数
+```python
+def is_number(n):
+    try:
+        a = int(n)
+        return isinstance(a, int)
+    except ValueError:
+        return False
+```
+2. 中序遍历:依据层次遍历二叉树 stack/middle/q2
+
+#### 二叉树
