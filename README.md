@@ -29,6 +29,8 @@ def is_number(n):
     except ValueError:
         return False
 ```
-2. 中序遍历:依据层次遍历二叉树 stack/middle/q2
+2. 二叉树利用迭代遍历 ：stack/middle/q2
+- 中序遍历： 左->根->右 
+- 前序遍历： 根->左->右
+- 后序遍历： 左->右->根
 
-#### 二叉树
