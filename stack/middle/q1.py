@@ -50,7 +50,7 @@ def insert(node, new_node):
 
 
 class Solution(object):
-	def preTraversal(self, root):
+	def preorderTraversal(self, root):
 		"""
 		前序遍历
 		:param root:
@@ -127,7 +127,7 @@ if __name__ == "__main__":
 	print(u"中序遍历是：")
 	print(a)
 
-	b = Solution().preTraversal(tree.get_root())
+	b = Solution().preorderTraversal(tree.get_root())
 	print(u"前序遍历是：")
 	print(b)
 
