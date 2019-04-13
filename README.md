@@ -34,23 +34,24 @@ def is_number(n):
 ```
 
 #### 树 Tree
+> 栈太多题目牵扯到二叉树 所以先写树 再回头写栈的题目： stack /middle/q103、
 
-1. 二叉树利用迭代遍历 ：stack/middle/q2
+1. 遍历 ：stack/middle/q2
 - 中序遍历： 左->根->右 
 - 前序遍历： 根->左->右
 - 后序遍历： 左->右->根
 
 
-2. 栈太多题目牵扯到二叉树 先从简单开始做树，再回头做stack /middle/q103、
+2. 树的通用思路
 - 使用递归解决
 - 使用栈解决
 
 3. 多叉树
 ```Python
 class Node(object):
-    def __init__(self,val,chirdren):
+    def __init__(self,val,children):
         self.val = val
-        self.children = chirdren
+        self.children = children
 ```
 4. 字符串和list翻转
 ```python
