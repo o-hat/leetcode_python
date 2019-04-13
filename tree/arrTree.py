@@ -6,29 +6,39 @@ Created by sundazhong on 2019/4/13 17:37.
 from tree.treeNode import TreeNode
 
 
-class arrTree(object):
+# 把树从根左右的顺序从0开始标号。那么第i号节点的左孩子的标号是2*i+1,右孩子是2*i+2。
+def create_tree(arr):
+    """
+    通过数组建立二叉树
+    :param arr:
+    :return:
+    """
+    nodelist = []
+    if arr:
+        length = len(arr)
+        for val in arr:
+            node = TreeNode(val) if val else None
+            nodelist.append(node)
+        i = 0
+        while i <= length / 2 + 1:
+            left = 2 * i + 1
+            right = 2 * i + 2
+            while not arr[i]:
+                i += 1
+            if left < length:
+                if nodelist[i]:
+                    nodelist[i].left = nodelist[left]
+            if right < length:
+                if nodelist[i]:
+                    nodelist[i].right = nodelist[right]
+            i += 1
 
-	def __init__(self):
-		self.root = None
-
-	def add(self, node):
-		if not self.root:
-			self.root = node
-		else:
-			add_node(self.root, node)
-
-	def get_root(self):
-		return self.root
-
-
-def add_node(node, new_node):
-	pass
+        return nodelist[0]
+    return None
 
 
 if __name__ == "__main__":
-	arr = [1, 2, 3, 4, 5, 6]
-	tree = arrTree()
-	for a in arr:
-		node = TreeNode(a)
-		tree.add(node)
-	root = tree.get_root()
+    pass
+    arr = [1, 2, 3, 4, 5, 6]
+    root = create_tree(arr)
+    print "done"

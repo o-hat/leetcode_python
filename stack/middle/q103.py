@@ -45,27 +45,6 @@ class Tree(object):
 		return self.root
 
 
-# def reConstructBinaryTree(pre, startPre, endPre, t_in, startIn, endIn):
-# 	"""
-# 	先序建立二叉树
-# 	:param pre:
-# 	:param startPre:
-# 	:param endPre:
-# 	:param t_in:
-# 	:param startIn:
-# 	:param endIn:
-# 	:return:
-# 	"""
-# 	if startPre > endPre or startIn > endIn:
-# 		return None
-# 	root = TreeNode(pre[startPre])
-# 	for i in range(startIn, endIn + 1):
-# 		if t_in[i] == pre[startPre]:
-# 			root.left = reConstructBinaryTree(pre, startPre + 1, startPre + i - startIn, t_in, startIn, i - 1)
-# 			root.right = reConstructBinaryTree(pre, i - startIn + startPre + 1, endPre, t_in, i + 1, endIn)
-# 	return root
-
-
 def insert(node, new_node):
 	if node.val > new_node.val:
 		if not node.left:
