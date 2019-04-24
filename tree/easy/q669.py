@@ -51,7 +51,8 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    arr = [3, 0, 4, 2, 1]
+    # arr = [3, 0, 4, 2, 1]
+    arr = [0, 2, 1]
     tree = SortTree()
     for a in arr:
         tree.insert(a)
