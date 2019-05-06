@@ -59,5 +59,7 @@ for i in range(5)[::-1]:
     # 4,3,2,1,0
     print(i)
 ```
+5. map extend === q257 
+
 
 
